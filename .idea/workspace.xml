@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4e2a7a8-be54-449f-b5df-de598d53e009" name="Default Changelist" comment="" />
+    <list default="true" id="f4e2a7a8-be54-449f-b5df-de598d53e009" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbconnection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getdimension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/toolv1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,19 +66,35 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="dwh-tool" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20otvixtHgZDdzEuczqBA85BetP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,11 +106,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636723000905</updated>
-      <workItem from="1636723002887" duration="361000" />
+      <workItem from="1636723002887" duration="556000" />
+      <workItem from="1637516621411" duration="5000" />
+      <workItem from="1637570133810" duration="11790000" />
+      <workItem from="1637681332483" duration="7646000" />
+      <workItem from="1637753253343" duration="2598000" />
+      <workItem from="1637757340748" duration="1211000" />
+      <workItem from="1637764134116" duration="30000" />
+      <workItem from="1637827608813" duration="12747000" />
+      <workItem from="1637848171168" duration="9100000" />
+      <workItem from="1637912566890" duration="12493000" />
+      <workItem from="1637948086161" duration="817000" />
+      <workItem from="1638000794809" duration="4814000" />
+      <workItem from="1638098100698" duration="9870000" />
+      <workItem from="1638120159964" duration="6000" />
+      <workItem from="1638194164728" duration="8531000" />
+      <workItem from="1638205615777" duration="852000" />
+      <workItem from="1638272754818" duration="10795000" />
+      <workItem from="1638342060432" duration="21426000" />
+      <workItem from="1638380640648" duration="2031000" />
+      <workItem from="1638429584312" duration="15473000" />
+      <workItem from="1638519082564" duration="276000" />
+      <workItem from="1638536568354" duration="126000" />
+      <workItem from="1638546483604" duration="22000" />
+      <workItem from="1638973554551" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1018" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637921991623">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1018" y="485" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417/-2560.23.2560.1417@0.23.2560.1417" timestamp="1637921991623" />
+    <state x="793" y="662" key="NewPhpFileDialog" timestamp="1637921424017">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="793" y="662" key="NewPhpFileDialog/0.23.2560.1417/-2560.23.2560.1417@0.23.2560.1417" timestamp="1637921424017" />
+    <state x="762" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1637570946988">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="762" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/-2560.23.2560.1417@0.23.2560.1417" timestamp="1637570946988" />
+    <state x="637" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1638372437966">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="637" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417/-2560.23.2560.1417@0.23.2560.1417" timestamp="1638372437966" />
   </component>
 </project>

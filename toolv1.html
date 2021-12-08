@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <title>Dimension Historization V1</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-2 mt-3 bg-light" style="border: 1px solid #eae9e7">
+            <h1 style="text-align: center; font-size: 26px; font-weight: 700">Create a historized Dimension (v1.0)</h1>
+
+            <div class="row py-2">
+                <div class="col-12">
+
+                    <!-- DIMENSION NAME -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold">1. Dimension Name</span>
+                        </div>
+                        <div class="col-8">
+                            <input class="w-100 py-1 my-2" type="text" value="dhPlaceholder" id="insert_dhName"/>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- SID -->
+                    <div class="row">
+                        <!-- column name -->
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold">2. SID Column</span>
+                        </div>
+                        <!-- insert -->
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_dhSID" placeholder="PlaceholderSID" value="PlaceholderSID"/>
+                        </div>
+                        <!-- special key -->
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="SIDSpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1" selected>SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5">0</option>
+                            </select>
+                        </div>
+                        <!-- checkbox -->
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="SIDcheck" name="SIDcheck">
+                        </div>
+                    </div>
+                    <!-- KEY-->
+                    <div class="row">
+                        <!-- column name -->
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold">3. Key Column</span>
+                        </div>
+                        <!-- insert -->
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_dhKey" placeholder="PlaceholderKey" value="PlaceholderKey"/>
+                        </div>
+                        <!-- special key -->
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="KeySpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2" selected>SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5">0</option>
+                            </select>
+                        </div>
+                        <!-- checkbox -->
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="Keycheck" name="Keycheck">
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- NAME EN -->
+                    <div class="row">
+                        <!-- column name -->
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold">4. NameEN Column</span>
+                        </div>
+                        <!-- insert -->
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_dhNameEN" placeholder="PlaceholderNameEN" value="PlaceholderNameEN"/>
+                        </div>
+                        <!-- special key -->
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="NameENSpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3" selected>SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5">0</option>
+                            </select>
+                        </div>
+                        <!-- checkbox -->
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="NameENcheck" name="NameENcheck" checked>
+                        </div>
+                    </div>
+                    <!-- NAME DE -->
+                    <div class="row">
+                        <!-- column name -->
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold">5. NameDE Column</span>
+                        </div>
+                        <!-- insert -->
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_dhNameDE" placeholder="PlaceholderNameDE" value="PlaceholderNameDE"/>
+                        </div>
+                        <!-- special key -->
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="NameDESpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4" selected>SpecialKeyNameDE</option>
+                                <option value="5">0</option>
+                            </select>
+                        </div>
+                        <!-- checkbox -->
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="NameDEcheck" name="NameDEcheck" checked>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- ADDITIONAL COLUMNS -->
+
+                    <!-- 5 -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold">6. Additional Columns</span>
+                        </div>
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_column5"/>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="column5SpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1" >SpecialKeySID</option>
+                                <option value="2" >SpecialKeyKey</option>
+                                <option value="3" >SpecialKeyNameEN</option>
+                                <option value="4" >SpecialKeyNameDE</option>
+                                <option value="5" selected>0</option>
+                            </select>
+                        </div>
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="column5check" name="column5check">
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold"></span>
+                        </div>
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_column6"/>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="column6SpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5" selected>0</option>
+                            </select>
+                        </div>
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="column6check" name="column6check">
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold"></span>
+                        </div>
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_column7"/>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="column7SpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5" selected>0</option>
+                            </select>
+                        </div>
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="column7check" name="column7check">
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold"></span>
+                        </div>
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_column8"/>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="column8SpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5" selected>0</option>
+                            </select>
+                        </div>
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="column8check" name="column8check">
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold"></span>
+                        </div>
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_column9"/>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="column9SpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5" selected>0</option>
+                            </select>
+                        </div>
+                        <div class="col-1 py-3">
+                            <input style="height: 20px; width: 20px" type="checkbox" id="column9check" name="column9check">
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="row">
+                        <div class="col-3 py-3">
+                            <span style="font-weight: bold"></span>
+                        </div>
+                        <div class="col-4">
+                            <input class="w-100 py-1 my-2" type="text" id="insert_column10"/>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select py-1 my-2" aria-label="Default select example" id="column10SpecialSelection">
+                                <option disabled>Select Special Key</option>
+                                <option value="1">SpecialKeySID</option>
+                                <option value="2">SpecialKeyKey</option>
+                                <option value="3">SpecialKeyNameEN</option>
+                                <option value="4">SpecialKeyNameDE</option>
+                                <option value="5" selected>0</option>
+                            </select>
+                        </div>
+                        <div class="col-1 py-3">
+                            <div class="col-1 py-3">
+                                <input style="height: 20px; width: 20px" type="checkbox" id="column10check" name="column10check">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- CTE Code -->
+                        <div class="row">
+                            <!-- column name -->
+                            <div class="col-3 py-3">
+                                <span style="font-weight: bold">7. CTE Code</span>
+                            </div>
+                            <!-- insert -->
+                            <div class="col-9">
+                                <textarea class="w-100" cols="50" rows="5" placeholder="...insert CTE code" id="insert_cteCode"></textarea>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- BUTTONS -->
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-4 mb-2">
+                                <button class="btn btn-primary w-100" onclick="myFunction()"><i class="fa fa-code" aria-hidden="true"></i> Generate Code</button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-secondary w-100" id="button"><i class="fa fa-clone" aria-hidden="true"></i> Copy Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 my-3" style="border: 1px solid #eae9e7">
+                <!-- CODE -->
+                <pre contenteditable="true" id="myInput" style="line-height: 1.2em">
+        <code>
+        <span style="color:#2d8791">CREATE PROCEDURE</span> [Dimension].[Load_<span id="1" style="font-weight: bold"></span>]
+            @ExecLogSID BIGINT = NULL,
+            @Transferred BIGINT = 0 OUT
+        AS
+        BEGIN
+            SET NOCOUNT ON;
+            <span style="color:#2d8791">BEGIN TRY</span>
+
+                -- DUMMY UPDATE
+                UPDATE Dimension.<span id="2" style="font-weight: bold"></span>
+                SET <span id="3" style="font-weight: bold"></span> = <span id="4" style="font-weight: bold"></span>
+                WHERE 1 = 0;
+
+                DECLARE @NASID BIGINT;
+                DECLARE @NACHAR NVARCHAR(10);
+                SELECT TOP 1
+                    @NASID = SpecialKeySID,
+                    @NACHAR = SpecialKeyKey
+                FROM Staging.dbo.xSpecialKey
+                WHERE SpecialKeyKey = 'N/A';
+
+                DECLARE @SAPMDT NVARCHAR(3);
+                SELECT TOP 1
+                    @SAPMDT = SAPMandantKey
+                FROM Dimension.dSAPMandant
+                WHERE isActiveSAPMandant = 1;
+
+                DECLARE @rowStartDate DATETIME2(0) = GETDATE(),
+                    @minRowStartDate DATETIME2(0) =
+                    (
+                        SELECT TOP (1) TimeDate FROM Dimension.dTime ORDER BY TimeSID
+                    ),
+                    @maxRowEndDate DATETIME2(0) =
+                    (
+                        SELECT TOP (1) TimeDate FROM Dimension.dTime ORDER BY TimeSID DESC
+                    );
+                    DECLARE @rowEndDate DATETIME2(0) = DATEADD(SECOND, -1, @rowStartDate);
+
+                SET IDENTITY_INSERT Dimension.<span id="5" style="font-weight: bold"></span> ON;
+
+                <span style="color:#2d8791">MERGE</span> Dimension.<span id="6" style="font-weight: bold"></span> AS dst
+                USING
+                (
+                    SELECT  <span id="7" style="font-weight: bold">SpecialKeySID</span>,
+                            <span id="8" style="font-weight: bold">SpecialKeyKey</span>,
+                            <span id="9" style="font-weight: bold">SpecialKeyNameEN</span>,
+                            <span id="10" style="font-weight: bold">SpecialKeyNameDE</span>,
+                            HASHBYTES('SHA2_256',
+                            (SELECT <span id="11" style="font-weight: bold"></span> <span id="12" style="font-weight: bold"></span> <span id="13" style="font-weight: bold"></span> <span id="14" style="font-weight: bold"></span> FOR JSON PATH)) AS <span style="font-weight: bold">RowHash</span>
+                    FROM Staging.dbo.xSpecialKey
+                    WHERE SpecialKeyDimension = 1
+                ) AS src
+
+                ON src.SpecialKeySID = dst.<span id="15" style="font-weight: bold"></span>
+
+                -- NOT MATCHED
+                <span style="color:#2d8791">WHEN NOT MATCHED THEN</span>
+                    INSERT
+                    (
+                        <span id="16" style="font-weight: bold"></span>,
+                        <span id="17" style="font-weight: bold"></span>,
+                        <span id="18" style="font-weight: bold"></span>,
+                        <span id="19" style="font-weight: bold"></span>,
+                        <span id="20" style="font-weight: bold"></span>,
+                        <span id="notmatched1" style="font-weight: bold"></span>
+                        <span id="notmatched2" style="font-weight: bold"></span>
+                        <span id="notmatched3" style="font-weight: bold"></span>
+                        <span id="notmatched4" style="font-weight: bold"></span>
+                        <span id="notmatched5" style="font-weight: bold"></span>
+                        <span id="notmatched6" style="font-weight: bold"></span>
+                        RowHash,
+                        RowIsCurrent,
+                        RowStartDate,
+                        RowEndDate
+                    )
+                    VALUES
+                    (
+                        src.<span id="21" style="font-weight: bold"></span>,
+                        src.<span id="22" style="font-weight: bold"></span>,
+                        src.<span id="23" style="font-weight: bold"></span>,
+                        src.<span id="24" style="font-weight: bold"></span>,
+                        src.<span id="25" style="font-weight: bold"></span>,
+                        <span id="notmatchedvalues1" style="font-weight: bold"></span>
+                        <span id="notmatchedvalues2" style="font-weight: bold"></span>
+                        <span id="notmatchedvalues3" style="font-weight: bold"></span>
+                        <span id="notmatchedvalues4" style="font-weight: bold"></span>
+                        <span id="notmatchedvalues5" style="font-weight: bold"></span>
+                        <span id="notmatchedvalues6" style="font-weight: bold"></span>
+                        src.RowHash,
+                        1,
+                        @minRowStartDate,
+                        @maxRowEndDate
+                    )
+
+                -- MATCHED
+                <span style="color:#2d8791">WHEN MATCHED</span> AND src.RowHash <> dst.RowHash THEN
+                UPDATE SET
+                    <span id="26" style="font-weight: bold"></span> = src.<span id="27" style="font-weight: bold"></span>,
+                    <span id="28" style="font-weight: bold"></span> = src.<span id="29" style="font-weight: bold"></span>,
+                    <span id="update1" style="font-weight: bold"></span>
+                    <span id="update2" style="font-weight: bold"></span>
+                    <span id="update3" style="font-weight: bold"></span>
+                    <span id="update4" style="font-weight: bold"></span>
+                    <span id="update5" style="font-weight: bold"></span>
+                    <span id="update6" style="font-weight: bold"></span>
+                    RowHash = src.RowHash;
+
+                SET IDENTITY_INSERT Dimension.<span id="30" style="font-weight: bold"></span> OFF;
+
+                <span style="color:#2d8791">DROP TABLE IF EXISTS #output;</span>
+                SELECT TOP (0)
+                    CAST(0 AS SMALLINT) AS ActionType,
+                    <span id="31" style="font-weight: bold"></span> AS <span id="32" style="font-weight: bold"></span>,
+                    <span id="33" style="font-weight: bold"></span>,
+                    <span id="34" style="font-weight: bold"></span>,
+                    <span id="35" style="font-weight: bold"></span>,
+                    <span id="36" style="font-weight: bold"></span>,
+                    <span id="drop1" style="font-weight: bold"></span>
+                    <span id="drop2" style="font-weight: bold"></span>
+                    <span id="drop3" style="font-weight: bold"></span>
+                    <span id="drop4" style="font-weight: bold"></span>
+                    <span id="drop5" style="font-weight: bold"></span>
+                    <span id="drop6" style="font-weight: bold"></span>
+                    RowHash,
+                    RowIsCurrent,
+                    RowStartDate,
+                    RowEndDate
+                INTO #output
+                FROM Dimension.<span id="37" style="font-weight: bold"></span>;
+
+                <span style="color:#2d8791">WITH cte</span>
+                AS (
+                    <span id="38" style="font-weight: bold"></span>
+                )
+
+                <span style="color:#2d8791">MERGE</span> Dimension.<span id="39" style="font-weight: bold"></span> AS dst
+                USING
+                (
+                    SELECT
+                        <span id="40" style="font-weight: bold"></span> = c.<span id="41" style="font-weight: bold"></span>,
+                        <span id="42" style="font-weight: bold"></span> = c.<span id="43" style="font-weight: bold"></span>,
+                        <span id="44" style="font-weight: bold"></span> = c.<span id="45" style="font-weight: bold"></span>,
+                        <span id="merge1a" style="font-weight: bold"></span> <span id="merge1b" style="font-weight: bold"></span>
+                        <span id="merge2a" style="font-weight: bold"></span> <span id="merge2b" style="font-weight: bold"></span>
+                        <span id="merge3a" style="font-weight: bold"></span> <span id="merge3b" style="font-weight: bold"></span>
+                        <span id="merge4a" style="font-weight: bold"></span> <span id="merge4b" style="font-weight: bold"></span>
+                        <span id="merge5a" style="font-weight: bold"></span> <span id="merge5b" style="font-weight: bold"></span>
+                        <span id="merge6a" style="font-weight: bold"></span> <span id="merge6b" style="font-weight: bold"></span>
+                        RowHash = HASHBYTES
+                        (
+                            'SHA2_256', (SELECT <span id="46" style="font-weight: bold"></span> <span id="47" style="font-weight: bold"></span> <span id="48" style="font-weight: bold"></span> <span id="49" style="font-weight: bold"></span> <span id="column1hash" style="font-weight: bold"></span> <span id="column2hash" style="font-weight: bold"></span> <span id="column3hash" style="font-weight: bold"></span> <span id="column4hash" style="font-weight: bold"></span> <span id="column5hash" style="font-weight: bold"></span> <span id="column6hash" style="font-weight: bold"></span> FOR JSON PATH)
+                        ),
+                        1 AS RowIsCurrent,
+                        @rowStartDate AS RowStartDate,
+                        @maxRowEndDate AS RowEndDate
+                    FROM cte c
+                ) <span style="color:#2d8791">AS src</span>
+
+                ON
+                (
+                    dst.<span id="50" style="font-weight: bold"></span> = src.<span id="51" style="font-weight: bold"></span>
+                    AND dst.RowIsCurrent = 1
+                )
+
+                <span style="color:#2d8791">WHEN MATCHED AND src.RowHash <> dst.RowHash THEN</span>
+                UPDATE SET
+                    -- Set Current Flag to 0 and RowEndDate to Yesterday or whatever past time or date
+                    dst.RowIsCurrent = 0,
+                    dst.RowEndDate = @rowEndDate
+                <span style="color:#2d8791">WHEN NOT MATCHED THEN</span>
+                INSERT
+                (
+                    <span id="52" style="font-weight: bold"></span>,
+                    <span id="53" style="font-weight: bold"></span>,
+                    <span id="54" style="font-weight: bold"></span>,
+                    <span id="55" style="font-weight: bold"></span>,
+                    <span id="insert1" style="font-weight: bold"></span>
+                    <span id="insert2" style="font-weight: bold"></span>
+                    <span id="insert3" style="font-weight: bold"></span>
+                    <span id="insert4" style="font-weight: bold"></span>
+                    <span id="insert5" style="font-weight: bold"></span>
+                    <span id="insert6" style="font-weight: bold"></span>
+                    RowHash,
+                    RowIsCurrent,
+                    RowStartDate,
+                    RowEndDate
+                )
+
+            <span style="color:#2d8791">VALUES</span>
+            (
+                0,
+                src.<span id="56" style="font-weight: bold"></span>,
+                src.<span id="57" style="font-weight: bold"></span>,
+                src.<span id="58" style="font-weight: bold"></span>,
+                <span id="values1" style="font-weight: bold"></span>
+                <span id="values2" style="font-weight: bold"></span>
+                <span id="values3" style="font-weight: bold"></span>
+                <span id="values4" style="font-weight: bold"></span>
+                <span id="values5" style="font-weight: bold"></span>
+                <span id="values6" style="font-weight: bold"></span>
+                src.RowHash,
+                src.RowIsCurrent,
+                src.RowStartDate,
+                src.RowEndDate
+            )
+
+            OUTPUT
+                -- output rows from source input that will be current versions of updated rows and move them to insert
+                Inserted.RowIsCurrent, -- 1=INSERTed, 0=UPDATEd, -1=DELETEd
+                Inserted.<span id="59" style="font-weight: bold"></span>,
+                Inserted.<span id="60" style="font-weight: bold"></span>,
+                src.<span id="61" style="font-weight: bold"></span>,
+                src.<span id="62" style="font-weight: bold"></span>,
+                src.<span id="63" style="font-weight: bold"></span>,
+                <span id="output1" style="font-weight: bold"></span>
+                <span id="output2" style="font-weight: bold"></span>
+                <span id="output3" style="font-weight: bold"></span>
+                <span id="output4" style="font-weight: bold"></span>
+                <span id="output5" style="font-weight: bold"></span>
+                <span id="output6" style="font-weight: bold"></span>
+                src.RowHash,
+                src.RowIsCurrent,
+                src.RowStartDate,
+                src.RowEndDate
+            INTO #output;
+
+            <span style="color:#2d8791">SET @Transferred += @@ROWCOUNT</span>;
+
+            UPDATE d
+            SET <span id="64" style="font-weight: bold"></span> = o.<span id="65" style="font-weight: bold"></span>
+            FROM Dimension.<span id="66" style="font-weight: bold"></span> d
+                INNER JOIN #output o
+                ON o.<span id="67" style="font-weight: bold"></span> = d.<span id="68" style="font-weight: bold"></span>
+            WHERE o.ActionType = 1; -- INSERTED
+
+            INSERT INTO Dimension.<span id="69" style="font-weight: bold"></span>
+            (
+                <span id="70" style="font-weight: bold"></span>,
+                <span id="71" style="font-weight: bold"></span>,
+                <span id="72" style="font-weight: bold"></span>,
+                <span id="73" style="font-weight: bold"></span>,
+                <span id="insertinto1" style="font-weight: bold"></span>
+                <span id="insertinto2" style="font-weight: bold"></span>
+                <span id="insertinto3" style="font-weight: bold"></span>
+                <span id="insertinto4" style="font-weight: bold"></span>
+                <span id="insertinto5" style="font-weight: bold"></span>
+                <span id="insertinto6" style="font-weight: bold"></span>
+                RowHash,
+                RowIsCurrent,
+                RowStartDate,
+                RowEndDate
+            )
+
+            SELECT
+                <span id="74" style="font-weight: bold"></span>,
+                <span id="75" style="font-weight: bold"></span>,
+                <span id="76" style="font-weight: bold"></span>,
+                <span id="77" style="font-weight: bold"></span>,
+                <span id="select1" style="font-weight: bold"></span>
+                <span id="select2" style="font-weight: bold"></span>
+                <span id="select3" style="font-weight: bold"></span>
+                <span id="select4" style="font-weight: bold"></span>
+                <span id="select5" style="font-weight: bold"></span>
+                <span id="select6" style="font-weight: bold"></span>
+                RowHash,
+                RowIsCurrent,
+                RowStartDate,
+                RowEndDate
+            FROM #output
+            WHERE ActionType = 0;
+
+            DROP TABLE IF EXISTS #output;
+
+            END TRY
+            BEGIN CATCH
+                THROW;
+            END CATCH;
+        END;
+</code>
+</pre>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function copyFunction() {
+            const copyText = document.getElementById("myInput").textContent;
+            const textArea = document.createElement('textarea');
+            textArea.textContent = copyText;
+            document.body.append(textArea);
+            textArea.select();
+            document.execCommand("copy");
+        }
+
+        document.getElementById('button').addEventListener('click', copyFunction);
+    </script>
+
+    <script type="text/javascript">
+        function myFunction() {
+            <!-- dhName-->
+            var dhName = document.getElementById("insert_dhName").value;
+
+            <!-- dhSID + Special Selection-->
+            var dhSID = document.getElementById("insert_dhSID").value;
+            var dhSIDspecial = document.getElementById("SIDSpecialSelection");
+            var dhSIDspecialSelection = dhSIDspecial.options[dhSIDspecial.selectedIndex].text;
+
+            <!-- dhKey-->
+            var dhKey = document.getElementById("insert_dhKey").value;
+            var dhKeyspecial = document.getElementById("KeySpecialSelection");
+            var dhKeyspecialSelection = dhKeyspecial.options[dhKeyspecial.selectedIndex].text;
+
+            <!-- dhNameEN-->
+            var dhNameEN = document.getElementById("insert_dhNameEN").value;
+            var dhNameENspecial = document.getElementById("NameENSpecialSelection");
+            var dhNameENspecialSelection = dhNameENspecial.options[dhNameENspecial.selectedIndex].text;
+
+            <!-- dhNameDE-->
+            var dhNameDE = document.getElementById("insert_dhNameDE").value;
+            var dhNameDEspecial = document.getElementById("NameDESpecialSelection");
+            var dhNameDEspecialSelection = dhNameDEspecial.options[dhNameDEspecial.selectedIndex].text;
+
+            <!-- 1 Extra Column -->
+            var dhColumn5 = document.getElementById("insert_column5").value;
+            if (dhColumn5 != "")
+            {
+                var dhColumn5Special = document.getElementById("column5SpecialSelection");
+                var dhColumn5SpecialSelection = dhColumn5Special.options[dhColumn5Special.selectedIndex].text;
+            }
+            <!-- 2 Extra Column -->
+            var dhColumn6 = document.getElementById("insert_column6").value;
+            if (dhColumn6 != "")
+            {
+                var dhColumn6Special = document.getElementById("column6SpecialSelection");
+                var dhColumn6SpecialSelection = dhColumn6Special.options[dhColumn6Special.selectedIndex].text;
+            }
+            <!-- 3 Extra Column -->
+            var dhColumn7 = document.getElementById("insert_column7").value;
+            if (dhColumn7 != "")
+            {
+                var dhColumn7Special = document.getElementById("column7SpecialSelection");
+                var dhColumn7SpecialSelection = dhColumn7Special.options[dhColumn7Special.selectedIndex].text;
+            }
+            <!-- 4 Extra Column -->
+            var dhColumn8 = document.getElementById("insert_column8").value;
+            if (dhColumn8 != "")
+            {
+                var dhColumn8Special = document.getElementById("column8SpecialSelection");
+                var dhColumn8SpecialSelection = dhColumn8Special.options[dhColumn8Special.selectedIndex].text;
+            }
+            <!-- 5 Extra Column -->
+            var dhColumn9 = document.getElementById("insert_column9").value;
+            if (dhColumn9 != "")
+            {
+                var dhColumn9Special = document.getElementById("column9SpecialSelection");
+                var dhColumn9SpecialSelection = dhColumn9Special.options[dhColumn9Special.selectedIndex].text;
+            }
+            <!-- 6 Extra Column -->
+            var dhColumn10 = document.getElementById("insert_column10").value;
+            if (dhColumn10 != "")
+            {
+                var dhColumn10Special = document.getElementById("column10SpecialSelection");
+                var dhColumn10SpecialSelection = dhColumn10Special.options[dhColumn10Special.selectedIndex].text;
+            }
+
+
+            <!-- dhSIDvalue -->
+            if (document.getElementById('SIDcheck').checked) {
+                var dhSIDvalue = document.getElementById("insert_dhSID").value;
+                var dhSIDvalue = document.getElementById("SIDSpecialSelection");
+                var dhSIDvalueSelection = ','+dhSIDvalue.options[dhSIDvalue.selectedIndex].text;
+
+                var SIDspecialOutput = ','+document.getElementById("insert_dhSID").value;
+            }
+            else {var dhSIDvalueSelection = ''; var SIDspecialOutput = '';}
+
+            <!-- dhKeyvalue -->
+            if (document.getElementById('Keycheck').checked) {
+                var dhKeyvalue = document.getElementById("insert_dhKey").value;
+                var dhKeyvalue = document.getElementById("KeySpecialSelection");
+                var dhKeyvalueSelection = ','+dhKeyvalue.options[dhKeyvalue.selectedIndex].text;
+
+                var KeyspecialOutput = ','+document.getElementById("insert_dhKey").value;
+            }
+            else {var dhKeyvalueSelection = ''; var KeyspecialOutput = '';}
+
+            <!-- dhNameENvalue -->
+            if (document.getElementById('NameENcheck').checked) {
+                var dhNameENvalue = document.getElementById("insert_dhNameEN").value;
+                var dhNameENvalue = document.getElementById("NameENSpecialSelection");
+                var dhNameENvalueSelection = ','+dhNameENvalue.options[dhNameENvalue.selectedIndex].text;
+
+                var NameENspecialOutput = ','+document.getElementById("insert_dhNameEN").value;
+            }
+            else {var dhNameENvalueSelection = ''; var NameENspecialOutput = '';}
+
+            <!-- dhNameDEvalue -->
+            if (document.getElementById('NameDEcheck').checked) {
+                var dhNameDEvalue = document.getElementById("insert_dhNameDE").value;
+                var dhNameDEvalue = document.getElementById("NameDESpecialSelection");
+                var dhNameDEvalueSelection = ','+dhNameDEvalue.options[dhNameDEvalue.selectedIndex].text;
+
+                var NameDEspecialOutput = ','+document.getElementById("insert_dhNameDE").value;
+            }
+            else {var dhNameDEvalueSelection = ''; var NameDEspecialOutput = '';}
+
+            <!-- dhColumn5 -->
+            if (document.getElementById('column5check').checked) {
+                var dhColumn5value = document.getElementById("insert_column5").value;
+                var dhColumn5value = document.getElementById("column5SpecialSelection");
+                var dhColumn5valueSelection = ','+dhColumn5value.options[dhColumn5value.selectedIndex].text;
+
+                var Column5specialOutput = ','+document.getElementById("insert_column5").value;
+            }
+            else {var dhColumn5valueSelection = ''; var Column5specialOutput = '';}
+
+            <!-- dhColumn6 -->
+            if (document.getElementById('column6check').checked) {
+                var dhColumn6value = document.getElementById("insert_column6").value;
+                var dhColumn6value = document.getElementById("column6SpecialSelection");
+                var dhColumn6valueSelection = ','+dhColumn6value.options[dhColumn6value.selectedIndex].text;
+
+                var Column6specialOutput = ','+document.getElementById("insert_column6").value;
+            }
+            else {var dhColumn6valueSelection = ''; var Column6specialOutput = '';}
+
+            <!-- dhColumn7 -->
+            if (document.getElementById('column7check').checked) {
+                var dhColumn7value = document.getElementById("insert_column7").value;
+                var dhColumn7value = document.getElementById("column7SpecialSelection");
+                var dhColumn7valueSelection = ','+dhColumn7value.options[dhColumn7value.selectedIndex].text;
+
+                var Column7specialOutput = ','+document.getElementById("insert_column7").value;
+            }
+            else {var dhColumn7valueSelection = ''; var Column7specialOutput = '';}
+
+            <!-- dhColumn8 -->
+            if (document.getElementById('column8check').checked) {
+                var dhColumn8value = document.getElementById("insert_column8").value;
+                var dhColumn8value = document.getElementById("column8SpecialSelection");
+                var dhColumn8valueSelection = ','+dhColumn8value.options[dhColumn8value.selectedIndex].text;
+
+                var Column8specialOutput = ','+document.getElementById("insert_column8").value;
+            }
+            else {var dhColumn8valueSelection = ''; var Column8specialOutput = '';}
+
+            <!-- dhColumn9 -->
+            if (document.getElementById('column9check').checked) {
+                var dhColumn9value = document.getElementById("insert_column9").value;
+                var dhColumn9value = document.getElementById("column9SpecialSelection");
+                var dhColumn9valueSelection = ','+dhColumn9value.options[dhColumn9value.selectedIndex].text;
+
+                var Column9specialOutput = ','+document.getElementById("insert_column9").value;
+            }
+            else {var dhColumn9valueSelection = ''; var Column9specialOutput = '';}
+
+            <!-- dhColumn10 -->
+            if (document.getElementById('column10check').checked) {
+                var dhColumn10value = document.getElementById("insert_column10").value;
+                var dhColumn10value = document.getElementById("column10SpecialSelection");
+                var dhColumn10valueSelection = ','+dhColumn10value.options[dhColumn10value.selectedIndex].text;
+
+                var Column10specialOutput = ','+document.getElementById("insert_column10").value;
+            }
+            else {var dhColumn10valueSelection = ''; var Column10specialOutput = '';}
+
+            var subStringSID = dhSID;
+            var subStringRID = subStringSID.substr(0,subStringSID.length-3);
+
+
+
+            <!-- insert_cteCode -->
+            var cteCode = document.getElementById("insert_cteCode").value;
+
+            document.getElementById("1").innerHTML = dhName;
+            document.getElementById("2").innerHTML = dhName;
+            document.getElementById("3").innerHTML = dhKey;
+            document.getElementById("4").innerHTML = dhKey;
+            document.getElementById("5").innerHTML = dhName;
+            document.getElementById("6").innerHTML = dhName;
+            document.getElementById("7").innerHTML = dhSIDspecialSelection;
+            document.getElementById("8").innerHTML = dhKeyspecialSelection;
+            document.getElementById("9").innerHTML = dhNameENspecialSelection;
+            document.getElementById("10").innerHTML = dhNameDEspecialSelection;
+
+            document.getElementById("11").innerHTML = dhSIDvalueSelection;
+            document.getElementById("12").innerHTML = dhKeyvalueSelection;
+            document.getElementById("13").innerHTML = dhNameENvalueSelection;
+            document.getElementById("14").innerHTML = dhNameDEvalueSelection;
+
+            document.getElementById("15").innerHTML = dhSID;
+            document.getElementById("16").innerHTML = subStringRID+'RID';
+            document.getElementById("17").innerHTML = dhSID;
+            document.getElementById("18").innerHTML = dhKey;
+            document.getElementById("19").innerHTML = dhNameEN;
+            document.getElementById("20").innerHTML = dhNameDE;
+
+            document.getElementById("21").innerHTML = 'SpecialKeySID';
+            document.getElementById("22").innerHTML = dhSIDspecialSelection;
+            document.getElementById("23").innerHTML = dhKeyspecialSelection;
+            document.getElementById("24").innerHTML = dhNameENspecialSelection;
+            document.getElementById("25").innerHTML = dhNameDEspecialSelection;
+
+            document.getElementById("26").innerHTML = dhNameEN;
+            document.getElementById("27").innerHTML = dhNameENspecialSelection;
+            document.getElementById("28").innerHTML = dhNameDE;
+            document.getElementById("29").innerHTML = dhNameDEspecialSelection;
+            document.getElementById("30").innerHTML = dhName;
+
+            document.getElementById("31").innerHTML = dhSID;
+            document.getElementById("32").innerHTML = subStringRID+'RID';
+            document.getElementById("33").innerHTML = dhSID;
+            document.getElementById("34").innerHTML = dhKey;
+            document.getElementById("35").innerHTML = dhNameEN;
+            document.getElementById("36").innerHTML = dhNameDE;
+            document.getElementById("37").innerHTML = dhName;
+
+            document.getElementById("38").innerHTML = cteCode;
+
+            document.getElementById("39").innerHTML = dhName;
+            document.getElementById("40").innerHTML = dhKey;
+            document.getElementById("41").innerHTML = dhKey;
+            document.getElementById("42").innerHTML = dhNameEN;
+            document.getElementById("43").innerHTML = dhNameEN;
+            document.getElementById("44").innerHTML = dhNameDE;
+            document.getElementById("45").innerHTML = dhNameDE;
+
+            document.getElementById("46").innerHTML = SIDspecialOutput;
+            document.getElementById("47").innerHTML = KeyspecialOutput;
+            document.getElementById("48").innerHTML = NameENspecialOutput;
+            document.getElementById("49").innerHTML = NameDEspecialOutput;
+
+            document.getElementById("50").innerHTML = dhKey;
+            document.getElementById("51").innerHTML = dhKey;
+
+            document.getElementById("52").innerHTML = dhSID;
+            document.getElementById("53").innerHTML = dhKey;
+            document.getElementById("54").innerHTML = dhNameEN;
+            document.getElementById("55").innerHTML = dhNameDE;
+
+            document.getElementById("56").innerHTML = dhKey;
+            document.getElementById("57").innerHTML = dhNameEN;
+            document.getElementById("58").innerHTML = dhNameDE;
+
+            document.getElementById("59").innerHTML = subStringRID+'RID';
+            document.getElementById("60").innerHTML = dhSID;
+            document.getElementById("61").innerHTML = dhKey;
+            document.getElementById("62").innerHTML = dhNameEN;
+            document.getElementById("63").innerHTML = dhNameDE;
+
+            document.getElementById("64").innerHTML = dhSID;
+            document.getElementById("65").innerHTML = subStringRID+'RID';
+            document.getElementById("66").innerHTML = dhName;
+            document.getElementById("67").innerHTML = subStringRID+'RID';
+            document.getElementById("68").innerHTML = subStringRID+'RID';
+
+            document.getElementById("69").innerHTML = dhName;
+            document.getElementById("70").innerHTML = dhSID;
+            document.getElementById("71").innerHTML = dhKey;
+            document.getElementById("72").innerHTML = dhNameEN;
+            document.getElementById("73").innerHTML = dhNameDE;
+
+            document.getElementById("74").innerHTML = dhSID;
+            document.getElementById("75").innerHTML = dhKey;
+            document.getElementById("76").innerHTML = dhNameEN;
+            document.getElementById("77").innerHTML = dhNameDE;
+
+            if (dhColumn5 != "") {
+                document.getElementById("notmatched1").innerHTML = dhColumn5+",";
+                document.getElementById("notmatchedvalues1").innerHTML = dhColumn5SpecialSelection+",";
+                document.getElementById("update1").innerHTML = dhColumn5+ " = "+dhColumn5SpecialSelection+",";
+                document.getElementById("drop1").innerHTML = dhColumn5+",";
+                document.getElementById("column1hash").innerHTML = Column5specialOutput;
+                document.getElementById("merge1a").innerHTML = dhColumn5;
+                document.getElementById("merge1b").innerHTML = "= c."+dhColumn5+",";
+                document.getElementById("insert1").innerHTML = dhColumn5+",";
+                document.getElementById("values1").innerHTML = "src."+dhColumn5+",";
+                document.getElementById("output1").innerHTML = "src."+dhColumn5+",";
+                document.getElementById("insertinto1").innerHTML = dhColumn5+",";
+                document.getElementById("select1").innerHTML = dhColumn5+",";
+            }
+            if (dhColumn6 != "") {
+                document.getElementById("notmatched2").innerHTML = dhColumn6+",";
+                document.getElementById("notmatchedvalues2").innerHTML = dhColumn6SpecialSelection+",";
+                document.getElementById("update2").innerHTML = dhColumn6+ " = "+dhColumn6SpecialSelection+",";
+                document.getElementById("drop2").innerHTML = dhColumn6+",";
+                document.getElementById("column2hash").innerHTML = Column6specialOutput;
+                document.getElementById("merge2a").innerHTML = dhColumn6;
+                document.getElementById("merge2b").innerHTML = "= c."+dhColumn6+",";
+                document.getElementById("insert2").innerHTML = dhColumn6+",";
+                document.getElementById("values2").innerHTML = "src."+dhColumn6+",";
+                document.getElementById("output2").innerHTML = "src."+dhColumn6+",";
+                document.getElementById("insertinto2").innerHTML = dhColumn6+",";
+                document.getElementById("select2").innerHTML = dhColumn6+",";
+            }
+            if (dhColumn7 != "") {
+                document.getElementById("notmatched3").innerHTML = dhColumn7+",";
+                document.getElementById("notmatchedvalues3").innerHTML = dhColumn7SpecialSelection+",";
+                document.getElementById("update3").innerHTML = dhColumn7+ " = "+dhColumn7SpecialSelection+",";
+                document.getElementById("drop3").innerHTML = dhColumn7+",";
+                document.getElementById("column3hash").innerHTML = Column7specialOutput;
+                document.getElementById("merge3a").innerHTML = dhColumn7;
+                document.getElementById("merge3b").innerHTML = "= c."+dhColumn7+",";
+                document.getElementById("insert3").innerHTML = dhColumn7+",";
+                document.getElementById("values3").innerHTML = "src."+dhColumn7+",";
+                document.getElementById("output3").innerHTML = "src."+dhColumn7+",";
+                document.getElementById("insertinto3").innerHTML = dhColumn7+",";
+                document.getElementById("select3").innerHTML = dhColumn7+",";
+            }
+            if (dhColumn8 != "") {
+                document.getElementById("notmatched4").innerHTML = dhColumn8+",";
+                document.getElementById("notmatchedvalues4").innerHTML = dhColumn8SpecialSelection+",";
+                document.getElementById("update4").innerHTML = dhColumn8+ " = "+dhColumn8SpecialSelection+",";
+                document.getElementById("drop4").innerHTML = dhColumn8+",";
+                document.getElementById("column4hash").innerHTML = Column8specialOutput;
+                document.getElementById("merge4a").innerHTML = dhColumn8;
+                document.getElementById("merge4b").innerHTML = "= c."+dhColumn8+",";
+                document.getElementById("insert4").innerHTML = dhColumn8+",";
+                document.getElementById("values4").innerHTML = "src."+dhColumn8+",";
+                document.getElementById("output4").innerHTML = "src."+dhColumn8+",";
+                document.getElementById("insertinto4").innerHTML = dhColumn8+",";
+                document.getElementById("select4").innerHTML = dhColumn8+",";
+            }
+            if (dhColumn9 != "") {
+                document.getElementById("notmatched5").innerHTML = dhColumn9+",";
+                document.getElementById("notmatchedvalues5").innerHTML = dhColumn9SpecialSelection+",";
+                document.getElementById("update5").innerHTML = dhColumn9+ " = "+dhColumn9SpecialSelection+",";
+                document.getElementById("drop5").innerHTML = dhColumn9+",";
+                document.getElementById("column5hash").innerHTML = Column9specialOutput;
+                document.getElementById("merge5a").innerHTML = dhColumn9;
+                document.getElementById("merge5b").innerHTML = "= c."+dhColumn9+",";
+                document.getElementById("insert5").innerHTML = dhColumn9+",";
+                document.getElementById("values5").innerHTML = "src."+dhColumn9+",";
+                document.getElementById("output5").innerHTML = "src."+dhColumn9+",";
+                document.getElementById("insertinto5").innerHTML = dhColumn9+",";
+                document.getElementById("select5").innerHTML = dhColumn9+",";
+            }
+            if (dhColumn10 != "") {
+                document.getElementById("notmatched6").innerHTML = dhColumn10+",";
+                document.getElementById("notmatchedvalues6").innerHTML = dhColumn10SpecialSelection+",";
+                document.getElementById("update6").innerHTML = dhColumn10+ " = "+dhColumn10SpecialSelection+",";
+                document.getElementById("drop6").innerHTML = dhColumn10+",";
+                document.getElementById("column6hash").innerHTML = Column10specialOutput;
+                document.getElementById("merge6a").innerHTML = dhColumn10;
+                document.getElementById("merge6b").innerHTML = "= c."+dhColumn10+",";
+                document.getElementById("insert6").innerHTML = dhColumn10+",";
+                document.getElementById("values6").innerHTML = "src."+dhColumn10+",";
+                document.getElementById("output6").innerHTML = "src."+dhColumn10+",";
+                document.getElementById("insertinto6").innerHTML = dhColumn10+",";
+                document.getElementById("select6").innerHTML = dhColumn10+",";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
